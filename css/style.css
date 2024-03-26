@@ -1,0 +1,228 @@
+@keyframes fly {
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.animate--animated {
+  animation-duration: 200ms;
+}
+
+.active {
+  color: #eb5d1e !important;
+}
+
+.main-btn-bg {
+  background-color: #eb5d1e;
+}
+
+h2 {
+  color: #4e4039;
+}
+
+nav {
+  padding-inline: 18rem;
+}
+nav ul li {
+  border: none !important;
+  cursor: pointer;
+}
+:where(nav ul li, a):is(:hover, :focus) {
+  color: #eb5d1e !important;
+}
+nav #brand {
+  letter-spacing: 1.5px;
+}
+nav #dropdown-menu,
+nav #nav-deep-dropdown-menu {
+  width: 200px;
+}
+nav #dropdown-arrow {
+  font-size: 0.75rem;
+  top: 30%;
+  left: 94%;
+}
+nav #deep-dropdown-arrow {
+  font-size: 0.75rem;
+  right: 10%;
+  top: 30%;
+}
+
+main hr {
+  width: 65px;
+  margin-inline: auto;
+  border-top: #eb5d1e solid 2px;
+  opacity: 1;
+}
+main #hero {
+  font-family: "Raleway", sans-serif;
+  padding: 10rem 18rem 5rem;
+  background-color: #fef8f5;
+  border-bottom: #fcebe3 solid 2px;
+}
+main #hero h1 {
+  color: #4e4039;
+}
+main #hero img {
+  animation-name: fly;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+main #about-us {
+  padding: 3rem 18rem;
+}
+main #about-us h3 {
+  color: #946960;
+}
+main #about-us span {
+  color: #f59e7a;
+}
+main #about-us p {
+  color: #5a6570;
+}
+main #services {
+  padding: 3rem 18rem;
+  background-color: #fef8f5;
+}
+main #services .services-card {
+  background-color: #fff;
+  cursor: pointer;
+}
+main #services .services-card span {
+  color: #eb5d1e;
+}
+main #services .services-card:hover {
+  transform: translateY(-1%);
+  box-shadow: 0 1px #eb5d1e;
+}
+main #portfolio {
+  padding: 3rem 18rem;
+}
+main #portfolio ul {
+  cursor: pointer;
+}
+main #FAQ {
+  padding: 3rem 18rem;
+  background-color: #fef8f5;
+}
+main #FAQ .accordion--custom {
+  border: none;
+  border-bottom: #eae7e5 solid 1px;
+  background-color: #fef8f5;
+}
+main #FAQ .accordion--custom .accordion-button {
+  background-color: #fef8f5;
+}
+main #FAQ .accordion--custom .accordion-button:not(.collapsed) {
+  color: #eb5d1e;
+}
+main #FAQ .accordion--custom .accordion-button:focus {
+  box-shadow: none;
+}
+main #team {
+  padding: 3rem 18rem 5rem;
+}
+main #clients {
+  padding: 3rem 18rem 5rem;
+  background-color: #fef8f5;
+}
+main #clients .owl-dots {
+  background-color: #fef8f5;
+}
+main #clients .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  margin-inline: 4px;
+  background-color: #fff;
+  border: #eb5d1e solid 1px;
+}
+main #clients .owl-dots .active span {
+  background-color: #eb5d1e;
+}
+main #contact-us {
+  padding: 3rem 18rem;
+}
+main #contact-us .contact-main-container {
+  border-top: #eb5d1e solid 2px;
+  border-bottom: #eb5d1e solid 2px;
+  box-shadow: 0px 0px 5px 5px #f8f8f8;
+}
+main #contact-us .contact-main-container:first-child {
+  width: 40%;
+}
+main #contact-us .contact-main-container:first-child .contact-logo-container {
+  background-color: #fef8f5;
+  width: 50px;
+  aspect-ratio: 1;
+}
+main #contact-us .contact-main-container:first-child .contact-logo-container span {
+  color: #eb5d1e;
+}
+main #contact-us .contact-main-container:last-child {
+  width: 60%;
+}
+main #contact-us .contact-main-container:last-child input[type=text] {
+  height: 45px;
+  border: #dee2e6 solid 1px;
+}
+main #contact-us .contact-main-container:last-child textarea {
+  border: #dee2e6 solid 1px;
+}
+main #contact-us .contact-main-container:last-child button {
+  background-color: #eb5d1e;
+  border: none;
+  height: 45px;
+  width: 150px;
+}
+main #join {
+  background-color: #fef8f5;
+  padding-block: 3rem;
+}
+main #join h2 {
+  font-family: "Raleway", sans-serif;
+}
+main #join div:last-child {
+  box-shadow: 0px 0px 5px 5px #f8f8f8;
+}
+main #join div:last-child input[type=text] {
+  width: 500px;
+  height: 40px;
+  border: none;
+  margin-right: -7px;
+}
+main #join div:last-child button {
+  background-color: #eb5d1e;
+  border: none;
+  height: 40px;
+  width: 120px;
+  margin-left: -7px;
+}
+
+footer ul {
+  list-style: none;
+}
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+footer #footer {
+  padding: 4rem 18rem;
+}
+footer #footer .footer-logo {
+  color: #eb5d1e;
+  font-size: 0.75rem;
+}
+footer #footer .social-logos {
+  width: 35px;
+  aspect-ratio: 1;
+  background-color: #eb5d1e;
+}
+footer #copyright {
+  padding: 1rem 18rem 2rem;
+  background-color: #fef8f5;
+}
+footer #copyright .copyright-custom {
+  color: #eb5d1e;
+}/*# sourceMappingURL=style.css.map */

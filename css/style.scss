@@ -1,0 +1,244 @@
+$main-color: #eb5d1e;
+$text-color: #4e4039;
+$main-bgc: #fef8f5;
+$padding-x: 18rem;
+
+@keyframes fly {
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate--animated {
+  animation-duration: 200ms;
+}
+
+.active {
+  color: $main-color !important;
+}
+
+.main-btn-bg {
+  background-color: $main-color;
+}
+
+h2 {
+  color: $text-color;
+}
+
+nav {
+  padding-inline: $padding-x;
+  ul {
+    li {
+      border: none !important;
+      cursor: pointer;
+      :where(&, a):is(:hover, :focus) {
+        color: $main-color !important;
+      }
+    }
+  }
+  #brand {
+    letter-spacing: 1.5px;
+  }
+  #dropdown-menu,
+  #nav-deep-dropdown-menu {
+    width: 200px;
+  }
+  #dropdown-arrow {
+    font-size: 0.75rem;
+    top: 30%;
+    left: 94%;
+  }
+  #deep-dropdown-arrow {
+    font-size: 0.75rem;
+    right: 10%;
+    top: 30%;
+  }
+}
+
+main {
+  hr {
+    width: 65px;
+    margin-inline: auto;
+    border-top: $main-color solid 2px;
+    opacity: 1;
+  }
+  #hero {
+    font-family: "Raleway", sans-serif;
+    padding: 10rem $padding-x 5rem;
+    background-color: $main-bgc;
+    border-bottom: #fcebe3 solid 2px;
+    h1 {
+      color: $text-color;
+    }
+    img {
+      animation-name: fly;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+  }
+  #about-us {
+    padding: 3rem $padding-x;
+    h3 {
+      color: #946960;
+    }
+    span {
+      color: #f59e7a;
+    }
+    p {
+      color: #5a6570;
+    }
+  }
+  #services {
+    padding: 3rem $padding-x;
+    background-color: $main-bgc;
+    .services-card {
+      background-color: #fff;
+      cursor: pointer;
+      span {
+        color: $main-color;
+      }
+      &:hover {
+        transform: translateY(-1%);
+        box-shadow: 0 1px $main-color;
+      }
+    }
+  }
+  #portfolio {
+    padding: 3rem $padding-x;
+    ul {
+      cursor: pointer;
+    }
+  }
+  #FAQ {
+    padding: 3rem $padding-x;
+    background-color: $main-bgc;
+    .accordion--custom {
+      border: none;
+      border-bottom: #eae7e5 solid 1px;
+      background-color: $main-bgc;
+      .accordion-button {
+        background-color: $main-bgc;
+        &:not(.collapsed) {
+          color: $main-color;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  #team {
+    padding: 3rem $padding-x 5rem;
+  }
+  #clients {
+    padding: 3rem $padding-x 5rem;
+    background-color: $main-bgc;
+    .owl-dots {
+      background-color: $main-bgc;
+      .owl-dot {
+        span {
+          width: 12px;
+          height: 12px;
+          margin-inline: 4px;
+          background-color: #fff;
+          border: $main-color solid 1px;
+        }
+      }
+      .active {
+        span {
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+  #contact-us {
+    padding: 3rem $padding-x;
+    .contact-main-container {
+      border-top: $main-color solid 2px;
+      border-bottom: $main-color solid 2px;
+      box-shadow: 0px 0px 5px 5px #f8f8f8;
+      &:first-child {
+        width: 40%;
+        .contact-logo-container {
+          background-color: $main-bgc;
+          width: 50px;
+          aspect-ratio: 1;
+          span {
+            color: $main-color;
+          }
+        }
+      }
+      &:last-child {
+        width: 60%;
+        input[type="text"] {
+          height: 45px;
+          border: #dee2e6 solid 1px;
+        }
+        textarea {
+          border: #dee2e6 solid 1px;
+        }
+        button {
+          background-color: $main-color;
+          border: none;
+          height: 45px;
+          width: 150px;
+        }
+      }
+    }
+  }
+  #join {
+    background-color: $main-bgc;
+    padding-block: 3rem;
+    h2 {
+      font-family: "Raleway", sans-serif;
+    }
+    div:last-child {
+      box-shadow: 0px 0px 5px 5px #f8f8f8;
+      input[type="text"] {
+        width: 500px;
+        height: 40px;
+        border: none;
+        margin-right: -7px;
+      }
+      button {
+        background-color: $main-color;
+        border: none;
+        height: 40px;
+        width: 120px;
+        margin-left: -7px;
+      }
+    }
+  }
+}
+
+footer {
+  ul {
+    list-style: none;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  #footer {
+    padding: 4rem $padding-x;
+    .footer-logo {
+      color: $main-color;
+      font-size: 0.75rem;
+    }
+    .social-logos {
+      width: 35px;
+      aspect-ratio: 1;
+      background-color: $main-color;
+    }
+  }
+  #copyright {
+    padding: 1rem $padding-x 2rem;
+    background-color: $main-bgc;
+    .copyright-custom {
+      color: $main-color;
+    }
+  }
+}
